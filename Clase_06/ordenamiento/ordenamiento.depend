@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1523494339 source:d:\fferniot\ordenamiento\ordenamiento\main.c
+1523573553 source:d:\fferniot\ordenamiento\ordenamiento\main.c
 	<stdio.h>
 	<stdlib.h>
 	"sort.h"
 
-1523494015 d:\fferniot\ordenamiento\ordenamiento\sort.h
+1523573704 d:\fferniot\ordenamiento\ordenamiento\sort.h
 
-1523494251 source:d:\fferniot\ordenamiento\ordenamiento\sort.c
+1523573693 source:d:\fferniot\ordenamiento\ordenamiento\sort.c
 	<stdio.h>
 	<stdlib.h>
 

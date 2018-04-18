@@ -36,6 +36,37 @@ int sort_ordenarArrayEnteros(int* array, int cantidadElementos, int flagOrden)
     return retorno;
 }
 
+/** \brief Ordena un array de enteros de forma ascendente o descendente
+ *
+ * \param array int* array de enteros a ordenar
+ * \param cantidadElementos int cantidad de elementos del array
+ * \param flagOrden int [0] para ordenar ascendente [1] para ordenar descendente
+ * \return int [0] OK [-1] ERROR
+ *
+ */
+int sort_insertion(int* array, int cantidadElementos, int flagOrden)
+{
+    int retorno=-1;
+    int i,j;
+    int temp;
+    if(cantidadElementos>0)
+    {
+        retorno=0;
+        for(i=1;i<cantidadElementos;i++)
+        {
+            temp=array[i];
+            j=i-1;
+            while((j>=0 && temp>array[j] && flagOrden) || (j>=0 && temp<array[j] && !flagOrden))
+            {
+                array[j+1]=array[j];
+                j--;
+            }
+            array[j+1]=temp;
+        }
+    }
+    return retorno;
+}
+
 /** \brief Imprime por pantalla un array de enteros
  *
  * \param array int* array a mostrar
