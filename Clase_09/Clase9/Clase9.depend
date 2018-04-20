@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1524184689 source:d:\fferniot\clase9\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
